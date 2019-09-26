@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="" />
+  <title>Primera reunión de Comisión Asesora</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="primera_reunion_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="primera_reunion_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Primera reunión de Comisión Asesora</h1>
+    <h3 class="date">27 de septiembre del 2019</h3>
+</section>
+
+<section id="section" class="slide level2" data-background="portada.png">
+<h2></h2>
+</section>
+<section id="salvia-stachydifolia-benth." class="slide level2" data-background="fondo.png">
+<h2><em>Salvia stachydifolia</em> Benth.</h2>
+<p><small>Sistema mixto de polinización.</small> <img data-src="abeja-colibri.png" /></p>
+</section>
+<section id="section-1" class="slide level2" data-background="fondo.png">
+<h2></h2>
+<p>La especie se encuentra a más de 1500 metros de altura.<br />
+Dentro de la ecorregión de las Yungas. <img data-src="distrib_sp.png" /></p>
+</section>
+<section id="hipotesis" class="slide level2" data-background="fondo.png">
+<h2>Hipótesis</h2>
+<div align="justify">
+<p>En poblaciones naturales con diferente proporción de visitas de polinizadores (abejas vs. colibríes), existirán patrones divergentes tanto en la morfología floral como en las características del néctar y en el éxito reproductivo. Estas diferencias llevarían a un aislamiento reproductivo parcial entre las poblaciones.</p>
+</section>
+<section id="objetivo-general" class="slide level2" data-background="fondo.png">
+<h2>Objetivo general</h2>
+<div align="justify">
+<p>Examinar si las diferencias en los grupos de polinizadores y sus presiones selectivas particulares afectan el grado de aislamiento reproductivo y diferenciación morfológica entre poblaciones, y si este efecto es independiente del tiempo de divergencia entre estas poblaciones.</p>
+</section>
+<section id="objetivos-especificos" class="slide level2" data-transition="none" data-background="fondo.png">
+<h2>Objetivos específicos</h2>
+<div align="justify">
+<span style="color:black"> 1- Caracterizar la variabilidad y divergencia de poblaciones <em>S. stachydifolia</em>: morfología, producción de néctar y la arquitectura de la inflorescencia.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<span style="color:grey"> 2- Caracterizar los ensambles de polinizadores, que constituyen el contexto ecológico de selección divergente.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<p><span style="color:grey"> 3- Caracterizar la divergencia genética entre poblaciones utilizando marcadores neutrales.</p>
+</section>
+<section id="objetivos-especificos-1" class="slide level2" data-transition="none" data-background="fondo.png">
+<h2>Objetivos específicos</h2>
+<div align="justify">
+<span style="color:grey"> 1- Caracterizar la variabilidad y divergencia de poblaciones <em>S. stachydifolia</em>: morfología, producción de néctar y la arquitectura de la inflorescencia.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<span style="color:black"> 2- Caracterizar los ensambles de polinizadores, que constituyen el contexto ecológico de selección divergente.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<p><span style="color:grey"> 3- Caracterizar la divergencia genética entre poblaciones utilizando marcadores neutrales.</p>
+</section>
+<section id="objetivos-especificos-2" class="slide level2" data-transition="none" data-background="fondo.png">
+<h2>Objetivos específicos</h2>
+<div align="justify">
+<span style="color:grey"> 1- Caracterizar la variabilidad y divergencia de poblaciones <em>S. stachydifolia</em>: morfología, producción de néctar y la arquitectura de la inflorescencia.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<span style="color:grey"> 2- Caracterizar los ensambles de polinizadores, que constituyen el contexto ecológico de selección divergente.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<p><span style="color:black"> 3- Caracterizar la divergencia genética entre poblaciones utilizando marcadores neutrales.</p>
+</section>
+<section id="objetivos-especificos-3" class="slide level2" data-transition="none" data-background="fondo.png">
+<h2>Objetivos específicos</h2>
+<div align="justify">
+<span style="color:black"> 4- Determinar el grado de aislamiento reproductivo entre las poblaciones.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<span style="color:grey"> 5- Examinar la presencia de correlaciones entre el aislamiento reproductivo y las divergencias fenotípicas, ecológicas, genéticas y geográficas, para poner a prueba un modelo de aislamiento por adaptación.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<p><span style="color:grey"> 6- Estimar la selección natural mediada por polinizadores y establecer la eficacia de ambos gremios de polinizadores.</p>
+</section>
+<section id="objetivos-especificos-4" class="slide level2" data-transition="none" data-background="fondo.png">
+<h2>Objetivos específicos</h2>
+<div align="justify">
+<span style="color:grey"> 4- Determinar el grado de aislamiento reproductivo entre las poblaciones.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<span style="color:black"> 5- Examinar la presencia de correlaciones entre el aislamiento reproductivo y las divergencias fenotípicas, ecológicas, genéticas y geográficas, para poner a prueba un modelo de aislamiento por adaptación.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<p><span style="color:grey"> 6- Estimar la selección natural mediada por polinizadores y establecer la eficacia de ambos gremios de polinizadores.</p>
+</section>
+<section id="objetivos-especificos-5" class="slide level2" data-transition="none" data-background="fondo.png">
+<h2>Objetivos específicos</h2>
+<div align="justify">
+<span style="color:grey"> 4- Determinar el grado de aislamiento reproductivo entre las poblaciones.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<span style="color:grey"> 5- Examinar la presencia de correlaciones entre el aislamiento reproductivo y las divergencias fenotípicas, ecológicas, genéticas y geográficas, para poner a prueba un modelo de aislamiento por adaptación.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<p><span style="color:black"> 6- Estimar la selección natural mediada por polinizadores y establecer la eficacia de ambos gremios de polinizadores.</p>
+</section>
+<section id="section-2" class="slide level2" data-background="fondo.png">
+<h2></h2>
+<p>Visita de Herbarios CORD (Córdoba) y LIL (Tucumán) <img data-src="mapa.png" /></p>
+</section>
+<section id="section-3" class="slide level2" data-transition="none" data-background="fondo1.png">
+<h2></h2>
+<h3 id="nectar"><strong>Néctar</strong>:</h3>
+<p><img data-src="nectar_mym2.png" /></p>
+</section>
+<section id="section-4" class="slide level2" data-transition="none" data-background="fondo1.png">
+<h2></h2>
+<h3 id="nectar-1"><strong>Néctar</strong>:</h3>
+<p>Caracterización del néctar de <em>S. stachydifolia</em> <img data-src="nectar.png" /></p>
+</section>
+<section id="section-5" class="slide level2" data-transition="none" data-background="fondo1.png">
+<h2></h2>
+<h3 id="nectar-2"><strong>Néctar</strong>:</h3>
+<p>Comparación de las características del néctar entre las poblaciones. <img data-src="nectar_volcon.png" /></p>
+</section>
+<section id="section-6" class="slide level2" data-transition="none" data-background="fondo1.png">
+<h2></h2>
+<h3 id="morfometria-geometrica"><strong>Morfometría Geométrica</strong>:</h3>
+<p><img data-src="gm_mym.png" /></p>
+<div align="justify">
+<p><small>Se usó el paquete Geomorph </small></p>
+</section>
+<section id="section-7" class="slide level2" data-transition="none" data-background="fondo1.png">
+<h2></h2>
+<h3 id="morfometria-geometrica-1"><strong>Morfometría Geométrica</strong>:</h3>
+<p><img data-src="PCA.png" /></p>
+</section>
+<section id="section-8" class="slide level2" data-transition="none" data-background="fondo1.png">
+<h2></h2>
+<h3 id="morfometria-geometrica-2"><strong>Morfometría Geométrica</strong>:</h3>
+<p><img data-src="Csize.png" /></p>
+</section>
+<section id="section-9" class="slide level2" data-background="fondo2.png">
+<h2></h2>
+<p><img data-src="polinizadores_mym.png" /></p>
+</section>
+<section id="polinizadores-mas-frecuentes" class="slide level2" data-transition="none" data-background="fondo2.png">
+<h2>Polinizadores más frecuentes</h2>
+<p><img data-src="colibries.png" /></p>
+</section>
+<section id="polinizadores-mas-frecuentes-1" class="slide level2" data-transition="none" data-background="fondo2.png">
+<h2>Polinizadores más frecuentes</h2>
+<p><img data-src="abejas.png" /></p>
+</section>
+<section id="polinizadores-mas-frecuentes-2" class="slide level2" data-transition="none" data-background="fondo2.png">
+<h2>Polinizadores más frecuentes</h2>
+<p><img data-src="bombus.png" /></p>
+</section>
+<section id="tasa-de-visitas" class="slide level2" data-background="fondo2.png">
+<h2>Tasa de visitas</h2>
+<p><img data-src="polinizadores_gremios.png" /></p>
+</section>
+<section id="caracterizacion-de-las-poblaciones" class="slide level2" data-background="fondo2.png">
+<h2>Caracterización de las poblaciones</h2>
+<p><img data-src="mapa2.png" /></p>
+</section>
+<section id="section-10" class="slide level2" data-background="fondo5.png">
+<h2></h2>
+<div align="justify">
+<p><strong>Distancia geográfica:</strong> medida en Google Maps de las distancias entre las poblaciones visitadas.</p>
+<div align="justify">
+<p><strong>Distancia fenotípicas:</strong> fueron divididas en tres: néctar, forma y tamaño.</p>
+<div align="justify">
+<strong>Distancia ecológica:</strong> se estimó como la similitud proporcional entre los ensambles de polinizadores de cada población.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<p><small> Se estimaron las matrices de distancias respectivas y posteriormente se calcularon los test estadísticos de Procrustes, <em>Mantel</em> y Parcial de Mantel.</small></p>
+</section>
+<section id="nectar-3" class="slide level2" data-background="fondo5.png">
+<h2>Néctar</h2>
+<p><img data-src="dist_nectar.png" /></p>
+</section>
+<section id="forma-floral" class="slide level2" data-background="fondo5.png">
+<h2>Forma floral</h2>
+<p><img data-src="dist_forma.png" /></p>
+</section>
+<section id="tamano-floral" class="slide level2" data-background="fondo5.png">
+<h2>Tamaño floral</h2>
+<p><img data-src="dist_tamaño.png" /></p>
+</section>
+<section id="section-11" class="slide level2" data-background="fondo3.png">
+<h2></h2>
+<img data-src="hojas_obj3.png" />
+<div align="justify">
+<p><small> Diseño de microsatélites en colaboración con Dra. Fernanda Pérez del Departamento de Ecología de la Pontificia Universidad Católica de Chile.</small></p>
+</section>
+<section id="section-12" class="slide level2" data-background="fondo4.png">
+<h2></h2>
+<img data-src="aislam_reprod2.png" />
+<div align="justify">
+<p><small> Umbráculo en el IMBIV con individuos de la población de Tafí del Valle.</small></p>
+</section>
+<section id="section-13" class="slide level2" data-background="fondo8.png">
+<h2></h2>
+</section>
+<section id="en-campo" class="slide level2" data-background="fondo.png">
+<h2>En campo</h2>
+<div align="justify">
+<p>Aumentar el número de poblaciones, preferentemente las que se encuentran al norte de la distribución de la especie. <img data-src="mapa3.png" /></p>
+</section>
+<section id="section-14" class="slide level2" data-background="fondo.png">
+<h2></h2>
+<ul>
+<li>Caracterización fenotípica.<br />
+<!-- blank line --> <br> <!-- blank line --></li>
+<li>Caracterizar ensambles de polinizadores.<br />
+<!-- blank line --> <br> <!-- blank line --></li>
+<li>Recolección de hojas para extracción de ADN, diseño de microsatélites específicos para la especie, secuenciar y realizar el genotipado de los individuos.</li>
+</ul>
+</section>
+<section id="en-campo-1" class="slide level2" data-background="fondo.png">
+<h2>En campo</h2>
+<div align="justify">
+<p>Experimentos de selección en poblaciones caracterizadas. <img data-src="pobl_poliniz.png" /></p>
+</section>
+<section id="en-invernadero" class="slide level2" data-background="fondo.png">
+<h2>En invernadero</h2>
+<div align="justify">
+<p>Experimentos manipulativos de aislamiento reproductivo. <img data-src="aislam_reprod.png" /></p>
+</section>
+<section id="section-15" class="slide level2" data-background="fondo.png">
+<h2></h2>
+<div align="justify">
+Buscar información de requerimiento nutricinal de los polinizadores para compara con datos medidos de nectar en las distintas poblaciones.<br />
+<!-- blank line --> <br> <!-- blank line -->
+<div align="justify">
+<p>Buscar información de tamaño de cada una de las abejas para compara las poblaciones caracterizadas como melitófilas.</p>
+</section>
+<section id="section-16" class="slide level2" data-background="fondo.png">
+<h2></h2>
+<div align="justify">
+<p>Estudiar la diparidad entre poblaciones, principalmente para explicar la variación en la poblacion ornitófila. <img data-src="PCA.png" /></p>
+</section>
+<section id="section-17" class="slide level2" data-background="fondo7.png">
+<h2></h2>
+</section>
+    </div>
+  </div>
+
+  <script src="primera_reunion_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="primera_reunion_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
